@@ -1,0 +1,8 @@
+Django==5.2.7
+celery[redis]==5.5.3
+redis==5.2.1
+django-silk==5.4.3
+psycopg[binary]==3.2.10
+pytest==8.4.2
+pytest-django==4.11.1
+requests==2.32.5

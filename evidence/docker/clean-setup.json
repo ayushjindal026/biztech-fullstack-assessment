@@ -1,0 +1,15 @@
+{
+  "redis_port": 16380,
+  "project": "biztech-cleanverify-20261021172022",
+  "retained_volumes": [
+    "biztech-cleanverify-20261021172022_postgres",
+    "biztech-cleanverify-20261021172022_redis"
+  ],
+  "web_port": 18001,
+  "database_volumes_fresh": true,
+  "passed": true,
+  "started_at_utc": "2026-10-21T17:20:22.4530409Z",
+  "commands": "README up --build, seed, profile, pytest",
+  "elapsed_seconds": 78.774,
+  "image_layers_cached": true
+}

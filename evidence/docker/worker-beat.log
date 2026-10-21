@@ -1,0 +1,69 @@
+beat-1  | [2026-10-21 12:16:34,984: INFO/MainProcess] beat: Starting...
+beat-1    | [2026-10-21 12:17:05,768: INFO/MainProcess] Scheduler: Sending due task recover (mailjobs.tasks.recover)
+beat-1    | [2026-10-21 12:17:36,366: INFO/MainProcess] Scheduler: Sending due task recover (mailjobs.tasks.recover)
+beat-1    | [2026-10-21 12:18:06,994: INFO/MainProcess] Scheduler: Sending due task recover (mailjobs.tasks.recover)
+beat-1    | [2026-10-21 12:18:37,656: INFO/MainProcess] Scheduler: Sending due task recover (mailjobs.tasks.recover)
+beat-1    | [2026-10-21 12:19:08,297: INFO/MainProcess] Scheduler: Sending due task recover (mailjobs.tasks.recover)
+beat-1    | [2026-10-21 12:19:38,960: INFO/MainProcess] Scheduler: Sending due task recover (mailjobs.tasks.recover)
+beat-1    | [2026-10-21 12:20:09,620: INFO/MainProcess] Scheduler: Sending due task recover (mailjobs.tasks.recover)
+beat-1    | [2026-10-21 12:20:40,321: INFO/MainProcess] Scheduler: Sending due task recover (mailjobs.tasks.recover)
+beat-1    | [2026-10-21 12:21:10,971: INFO/MainProcess] Scheduler: Sending due task recover (mailjobs.tasks.recover)
+beat-1    | [2026-10-21 12:21:41,711: INFO/MainProcess] Scheduler: Sending due task recover (mailjobs.tasks.recover)
+beat-1    | [2026-10-21 12:22:12,360: INFO/MainProcess] Scheduler: Sending due task recover (mailjobs.tasks.recover)
+worker-1  | /usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+worker-1  | absolutely not recommended!
+worker-1  | 
+worker-1  | Please specify a different user using the --uid option.
+worker-1  | 
+worker-1  | User information: uid=0 euid=0 gid=0 egid=0
+worker-1  | 
+worker-1  |   warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+worker-1  |  
+worker-1  |  -------------- celery@e8ea30ca289d v5.5.3 (immunity)
+worker-1  | --- ***** ----- 
+worker-1  | -- ******* ---- Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.36 2026-10-21 12:16:34
+worker-1  | - *** --- * --- 
+worker-1  | - ** ---------- [config]
+worker-1  | - ** ---------- .> app:         assessment:0x7703c64507d0
+worker-1  | - ** ---------- .> transport:   redis://redis:6379/0
+worker-1  | - ** ---------- .> results:     redis://redis:6379/0
+worker-1  | - *** --- * --- .> concurrency: 4 (prefork)
+worker-1  | -- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+worker-1  | --- ***** ----- 
+worker-1  |  -------------- [queues]
+worker-1  |                 .> celery           exchange=celery(direct) key=celery
+worker-1  |                 
+worker-1  | 
+worker-1  | [tasks]
+worker-1  |   . mailjobs.tasks.deliver
+worker-1  |   . mailjobs.tasks.recover
+worker-1  | 
+worker-1  | [2026-10-21 12:16:36,969: INFO/MainProcess] Connected to redis://redis:6379/0
+worker-1  | [2026-10-21 12:16:36,976: INFO/MainProcess] mingle: searching for neighbors
+worker-1  | [2026-10-21 12:16:38,029: INFO/MainProcess] mingle: all alone
+worker-1  | [2026-10-21 12:16:38,077: INFO/MainProcess] celery@e8ea30ca289d ready.
+worker-1  | [2026-10-21 12:17:05,797: INFO/MainProcess] Task mailjobs.tasks.recover[897edc69-fd46-49d7-9e4f-b427f950dbca] received
+worker-1  | [2026-10-21 12:17:05,869: INFO/ForkPoolWorker-4] Task mailjobs.tasks.recover[897edc69-fd46-49d7-9e4f-b427f950dbca] succeeded in 0.06975853999995252s: None
+worker-1  | [2026-10-21 12:17:36,387: INFO/MainProcess] Task mailjobs.tasks.recover[36eef70a-772b-4172-a512-a12cd699a860] received
+worker-1  | [2026-10-21 12:17:36,413: INFO/ForkPoolWorker-4] Task mailjobs.tasks.recover[36eef70a-772b-4172-a512-a12cd699a860] succeeded in 0.025113704999967013s: None
+worker-1  | [2026-10-21 12:18:07,045: INFO/MainProcess] Task mailjobs.tasks.recover[7a10cc1b-ba01-484c-b3f6-67f9ddef684f] received
+worker-1  | [2026-10-21 12:18:07,089: INFO/ForkPoolWorker-4] Task mailjobs.tasks.recover[7a10cc1b-ba01-484c-b3f6-67f9ddef684f] succeeded in 0.042116419999956634s: None
+worker-1  | [2026-10-21 12:18:37,678: INFO/MainProcess] Task mailjobs.tasks.recover[507ecbd8-e298-4ade-a657-b2f95cdfd8b7] received
+worker-1  | [2026-10-21 12:18:37,753: INFO/ForkPoolWorker-4] Task mailjobs.tasks.recover[507ecbd8-e298-4ade-a657-b2f95cdfd8b7] succeeded in 0.07261807199984105s: None
+worker-1  | [2026-10-21 12:19:08,323: INFO/MainProcess] Task mailjobs.tasks.recover[a569d84c-ab22-4ba7-be62-84cd06acb848] received
+worker-1  | [2026-10-21 12:19:08,370: INFO/ForkPoolWorker-4] Task mailjobs.tasks.recover[a569d84c-ab22-4ba7-be62-84cd06acb848] succeeded in 0.044726751999860426s: None
+worker-1  | [2026-10-21 12:19:38,985: INFO/MainProcess] Task mailjobs.tasks.recover[17583d09-3341-4ba8-b9a5-d75b6b2a5429] received
+worker-1  | [2026-10-21 12:19:39,164: INFO/ForkPoolWorker-4] Task mailjobs.tasks.recover[17583d09-3341-4ba8-b9a5-d75b6b2a5429] succeeded in 0.1768545360000644s: None
+worker-1  | [2026-10-21 12:19:39,171: INFO/MainProcess] Task mailjobs.tasks.deliver[fa1d2f2e-4b1b-4f47-a490-60183ad8675d] received
+worker-1  | [2026-10-21 12:19:39,266: INFO/ForkPoolWorker-4] Simulated email accepted job=f083d267-8ee7-4341-81a9-73058e8b5e24
+worker-1  | [2026-10-21 12:19:39,289: INFO/ForkPoolWorker-4] Task mailjobs.tasks.deliver[fa1d2f2e-4b1b-4f47-a490-60183ad8675d] succeeded in 0.11455147900005613s: None
+worker-1  | [2026-10-21 12:20:09,684: INFO/MainProcess] Task mailjobs.tasks.recover[195e18f1-a624-444d-85de-38daf5139617] received
+worker-1  | [2026-10-21 12:20:09,739: INFO/ForkPoolWorker-4] Task mailjobs.tasks.recover[195e18f1-a624-444d-85de-38daf5139617] succeeded in 0.051981250999915574s: None
+worker-1  | [2026-10-21 12:20:40,366: INFO/MainProcess] Task mailjobs.tasks.recover[3a049cb6-1b78-4ec8-8d71-ac1b46142b16] received
+worker-1  | [2026-10-21 12:20:40,404: INFO/ForkPoolWorker-4] Task mailjobs.tasks.recover[3a049cb6-1b78-4ec8-8d71-ac1b46142b16] succeeded in 0.03633051199994952s: None
+worker-1  | [2026-10-21 12:21:11,017: INFO/MainProcess] Task mailjobs.tasks.recover[2ce41c82-2208-40fd-bbbf-4030d843f06c] received
+worker-1  | [2026-10-21 12:21:11,087: INFO/ForkPoolWorker-4] Task mailjobs.tasks.recover[2ce41c82-2208-40fd-bbbf-4030d843f06c] succeeded in 0.0675199799998154s: None
+worker-1  | [2026-10-21 12:21:41,745: INFO/MainProcess] Task mailjobs.tasks.recover[d093ff7d-6d92-4f59-9b54-ac60ad61b9b2] received
+worker-1  | [2026-10-21 12:21:41,826: INFO/ForkPoolWorker-4] Task mailjobs.tasks.recover[d093ff7d-6d92-4f59-9b54-ac60ad61b9b2] succeeded in 0.07917309100002967s: None
+worker-1  | [2026-10-21 12:22:12,381: INFO/MainProcess] Task mailjobs.tasks.recover[ac510b6a-01cf-4336-a2dc-b5d41a21c49b] received
+worker-1  | [2026-10-21 12:22:12,439: INFO/ForkPoolWorker-4] Task mailjobs.tasks.recover[ac510b6a-01cf-4336-a2dc-b5d41a21c49b] succeeded in 0.055403322000074695s: None

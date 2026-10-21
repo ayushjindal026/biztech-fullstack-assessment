@@ -1,0 +1,20 @@
+16 objects imported automatically (use -v 2 for details).
+
+{
+  "checked_at_utc": "2026-10-21T17:24:17.723483+00:00",
+  "database": "postgresql",
+  "database_name": "assessment",
+  "pending_migrations": 0,
+  "redis_ping": true,
+  "worker_ping": {
+    "celery@01aa144f00d0": {
+      "ok": "pong"
+    }
+  },
+  "http_summary": 200,
+  "http_silk": 200,
+  "orders_after_rebuild": 320,
+  "beat_job_preserved": "f083d267-8ee7-4341-81a9-73058e8b5e24",
+  "beat_job_status": "sent",
+  "beat_job_attempts": 1
+}

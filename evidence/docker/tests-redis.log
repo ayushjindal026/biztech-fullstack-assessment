@@ -1,0 +1,26 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+________________________ test_atomic_concurrent_workers ________________________
+
+redis = <redis.client.Redis(<redis.connection.ConnectionPool(<redis.connection.Connection(host=redis,port=6379,db=0)>)>)>
+
+    def test_atomic_concurrent_workers(redis):
+        key = "assessment-test:" + uuid.uuid4().hex
+        limiter = SlidingWindow(redis, key, 20, 100)
+        try:
+            with ThreadPoolExecutor(max_workers=32) as pool:
+                results = list(pool.map(lambda _: limiter.acquire(), range(100)))
+            tokens = [token for token, _ in results if token]
+            assert len(tokens) == 20
+            Event().wait(0.15)
+            assert limiter.acquire()[0] is None  # active slots survive the window
+            for token in tokens:
+                limiter.finish(token)
+>           assert limiter.acquire()[0] is None
+E           AssertionError: assert 'f7678602-25fa-43c4-a3e1-794e159fa181' is None
+
+mailjobs/test_redis.py:32: AssertionError
+------------------ generated xml file: /tmp/pytest-redis.xml -------------------
+=========================== short test summary info ============================
+FAILED mailjobs/test_redis.py::test_atomic_concurrent_workers - AssertionErro...
+1 failed, 22 deselected in 0.91s

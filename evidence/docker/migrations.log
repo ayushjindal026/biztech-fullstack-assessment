@@ -1,0 +1,29 @@
+init-1  | Operations to perform:
+init-1  |   Apply all migrations: auth, contenttypes, mailjobs, orders, sessions, silk
+init-1  | Running migrations:
+init-1  |   Applying contenttypes.0001_initial... OK
+init-1  |   Applying contenttypes.0002_remove_content_type_name... OK
+init-1  |   Applying auth.0001_initial... OK
+init-1  |   Applying auth.0002_alter_permission_name_max_length... OK
+init-1  |   Applying auth.0003_alter_user_email_max_length... OK
+init-1  |   Applying auth.0004_alter_user_username_opts... OK
+init-1  |   Applying auth.0005_alter_user_last_login_null... OK
+init-1  |   Applying auth.0006_require_contenttypes_0002... OK
+init-1  |   Applying auth.0007_alter_validators_add_error_messages... OK
+init-1  |   Applying auth.0008_alter_user_username_max_length... OK
+init-1  |   Applying auth.0009_alter_user_last_name_max_length... OK
+init-1  |   Applying auth.0010_alter_group_name_max_length... OK
+init-1  |   Applying auth.0011_update_proxy_permissions... OK
+init-1  |   Applying auth.0012_alter_user_first_name_max_length... OK
+init-1  |   Applying mailjobs.0001_initial... OK
+init-1  |   Applying orders.0001_initial... OK
+init-1  |   Applying orders.0002_alter_orderline_options... OK
+init-1  |   Applying sessions.0001_initial... OK
+init-1  |   Applying silk.0001_initial... OK
+init-1  |   Applying silk.0002_auto_update_uuid4_id_field... OK
+init-1  |   Applying silk.0003_request_prof_file... OK
+init-1  |   Applying silk.0004_request_prof_file_storage... OK
+init-1  |   Applying silk.0005_increase_request_prof_file_length... OK
+init-1  |   Applying silk.0006_fix_request_prof_file_blank... OK
+init-1  |   Applying silk.0007_sqlquery_identifier... OK
+init-1  |   Applying silk.0008_sqlquery_analysis... OK

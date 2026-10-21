@@ -1,0 +1,14 @@
+{
+  "mode": "fast",
+  "database": "postgresql",
+  "redis_version": "7.4.1",
+  "window_ms": 1000,
+  "limit": 20,
+  "jobs": 500,
+  "provider_attempts": 502,
+  "max_rolling_attempts": 17,
+  "sent": 500,
+  "intentional_transient_failures": 1,
+  "killed_worker_recovered": true,
+  "elapsed_seconds": 58.301
+}

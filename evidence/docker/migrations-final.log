@@ -1,0 +1,4 @@
+init-1  | Operations to perform:
+init-1  |   Apply all migrations: auth, contenttypes, mailjobs, orders, sessions, silk
+init-1  | Running migrations:
+init-1  |   No migrations to apply.

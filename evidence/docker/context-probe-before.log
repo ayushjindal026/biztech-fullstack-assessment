@@ -1,0 +1,17 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 60B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load build context
+#3 transferring context: 3.39MB 0.4s done
+#3 ERROR: archive/tar: unknown file mode ?rwxr-xr-x
+------
+ > [internal] load build context:
+------
+ERROR: failed to solve: archive/tar: unknown file mode ?rwxr-xr-x

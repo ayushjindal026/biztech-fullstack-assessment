@@ -1,0 +1,26 @@
+/mnt/e/Github Projects/Biz-Tech Analytics/.venv/Lib/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- test1@THUNDER-BEAST026 v5.5.3 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39 2026-10-21 09:47:15
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         assessment:0x7a7317db2900
+- ** ---------- .> transport:   redis://127.0.0.1:6389/15
+- ** ---------- .> results:     redis://127.0.0.1:6389/15
+- *** --- * --- .> concurrency: 1 (solo)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> assessment-test:e34ba1dd84bc44899ddeff71ddfe59ee:queue exchange=assessment-test:e34ba1dd84bc44899ddeff71ddfe59ee:queue(direct) key=assessment-test:e34ba1dd84bc44899ddeff71ddfe59ee:queue
+                
+
+
+worker: Warm shutdown (MainProcess)
